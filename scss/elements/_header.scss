@@ -1,5 +1,7 @@
 .page__header {
   display: flex;
+  box-sizing: border-box;
+  height: 70px;
   justify-content: space-around;
   align-items: center;
   border-top: 5px solid $primary_color;
