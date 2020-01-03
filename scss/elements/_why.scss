@@ -32,6 +32,7 @@
 
   .why__button {
     @include buttons($primary_color);
+    border-bottom: 3px solid darken($primary_color, 20);
     margin: 30px;
   }
 }
