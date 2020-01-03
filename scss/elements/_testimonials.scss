@@ -1,0 +1,48 @@
+.testimonials {
+  background-color: lighten($font_color, 30);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .testimonials__description {
+    margin-bottom: 80px;
+  }
+
+  .testimonials__user {
+    transition: color 0.2s 0.2s ease-in-out;
+
+    &:hover {
+      color: $primary_color;
+    }
+
+    .user__avatar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #e4e5e5;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .user__name {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .user__company {
+      font-weight: 300;
+      margin-top: 0;
+      position: relative;
+      @include line-after(200px, $font_color);
+    }
+
+    .user__opinion {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 14px;
+    }
+  }
+}
