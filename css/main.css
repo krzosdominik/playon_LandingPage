@@ -684,4 +684,54 @@ span {
   font-size: 14px;
 }
 
+.why {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.why .reason__item {
+  border: 1px solid #e4e5e5;
+  margin: 15px;
+  padding: 30px 25px;
+  transition: color 0.2s 0.2s ease-in-out, border 0.2s 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.why .reason__item:hover {
+  color: #1ac9c7;
+  border: 1px solid #1ac9c7;
+}
+
+.why .reason__item:hover .reason__name {
+  color: #1ac9c7;
+}
+
+.why .reason__item .reason__name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #414042;
+  transition: color 0.2s 0.2s ease-in-out;
+}
+
+.why .why__button {
+  width: 230px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #1ac9c7;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  transition: background-color 0.1s 0.1s ease-in-out;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.why .why__button:hover {
+  background-color: #0e6f6e;
+}
+
 /*# sourceMappingURL=main.css.map */
