@@ -1,0 +1,88 @@
+.jumbotron {
+  min-height: calc(100vh - 70px);
+  background: no-repeat url("../../assets/background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: $secondary_color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .jumbotron__header {
+    margin-bottom: -35px;
+    z-index: 2;
+  }
+
+  .jumbotron__description {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 60px;
+    z-index: 2;
+  }
+
+  .jumbotron__button {
+    position: relative;
+    z-index: 2;
+    @include buttons(230px, 50px, rgba(255, 255, 255, 0.25));
+    border: 1px solid #fafafa;
+    margin: 0 0.5rem 4rem 0.5rem;
+    transition: background-color 0.2s 0.1s ease-in-out,
+      border-color 0.2s 0.1s ease-in-out;
+
+    &:hover {
+      background-color: $primary_color;
+      border-color: $primary_color;
+    }
+  }
+
+  .jumbotron__text {
+    z-index: 2;
+    opacity: 0.8;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "";
+      border-top: 2px solid $secondary_color;
+      width: 300px;
+      margin: 0 2rem;
+      transform: translateY(-0.25rem);
+    }
+  }
+
+  .jumbotron__partners {
+    z-index: 2;
+    opacity: 0.8;
+    position: relative;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-bottom: 1.5px solid $secondary_color;
+      border-right: 1.5px solid $secondary_color;
+      top: 150%;
+      left: 50%;
+      // transform: rotate(45deg);
+      transform: rotate(45deg) translate(-70%);
+    }
+    &::after {
+      width: 7px;
+      height: 7px;
+      top: 180%;
+    }
+  }
+}

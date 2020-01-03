@@ -346,7 +346,14 @@ body {
   color: #a8a7a7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
   color: #414042;
 }
 
@@ -400,6 +407,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .page__header {
   display: flex;
+  box-sizing: border-box;
+  height: 70px;
   justify-content: space-around;
   align-items: center;
   border-top: 5px solid #1ac9c7;
@@ -431,6 +440,98 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation .navigation__list .navigation__item a:hover {
   color: #1ac9c7;
+}
+
+.jumbotron {
+  min-height: calc(100vh - 70px);
+  background: no-repeat url("../../assets/background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+}
+
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron .jumbotron__header {
+  margin-bottom: -35px;
+  z-index: 2;
+}
+
+.jumbotron .jumbotron__description {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 60px;
+  z-index: 2;
+}
+
+.jumbotron .jumbotron__button {
+  position: relative;
+  z-index: 2;
+  width: 230px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid #fafafa;
+  margin: 0 0.5rem 4rem 0.5rem;
+  transition: background-color 0.2s 0.1s ease-in-out, border-color 0.2s 0.1s ease-in-out;
+}
+
+.jumbotron .jumbotron__button:hover {
+  background-color: #1ac9c7;
+  border-color: #1ac9c7;
+}
+
+.jumbotron .jumbotron__text {
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.jumbotron .jumbotron__text::before, .jumbotron .jumbotron__text::after {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #fff;
+  width: 300px;
+  margin: 0 2rem;
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+}
+
+.jumbotron .jumbotron__partners {
+  z-index: 2;
+  opacity: 0.8;
+  position: relative;
+}
+
+.jumbotron .jumbotron__partners::before, .jumbotron .jumbotron__partners::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  top: 150%;
+  left: 50%;
+  -webkit-transform: rotate(45deg) translate(-70%);
+          transform: rotate(45deg) translate(-70%);
+}
+
+.jumbotron .jumbotron__partners::after {
+  width: 7px;
+  height: 7px;
+  top: 180%;
 }
 
 /*# sourceMappingURL=main.css.map */
