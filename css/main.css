@@ -622,4 +622,66 @@ span {
   background-color: #0e6f6e;
 }
 
+.testimonials {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonials .testimonials__description {
+  margin-bottom: 80px;
+}
+
+.testimonials .testimonials__user {
+  transition: color 0.2s 0.2s ease-in-out;
+}
+
+.testimonials .testimonials__user:hover {
+  color: #1ac9c7;
+}
+
+.testimonials .testimonials__user .user__avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #e4e5e5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.testimonials .testimonials__user .user__name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.testimonials .testimonials__user .user__company {
+  font-weight: 300;
+  margin-top: 0;
+  position: relative;
+}
+
+.testimonials .testimonials__user .user__company::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #dbdada;
+  width: 200px;
+  top: 150%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-top: 5px;
+}
+
+.testimonials .testimonials__user .user__opinion {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=main.css.map */
