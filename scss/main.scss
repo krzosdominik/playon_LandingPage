@@ -1,23 +1,24 @@
 // generic
-@import './generic/normalize';
+@import "./generic/normalize";
 
 //settings
-@import './settings/all';
-@import './settings/fonts';
-@import './settings/grid';
-@import './settings/colors';
-@import './settings/variables';
+@import "./settings/all";
+@import "./settings/fonts";
+@import "./settings/grid";
+@import "./settings/colors";
+@import "./settings/variables";
 
 //mixins
-@import './elements/buttons';
-@import './elements/line-after';
+@import "./elements/buttons";
+@import "./elements/line-after";
 
 //elements
-@import './elements/header';
-@import './elements/navigation';
-@import './elements/home';
-@import './elements/how-to';
-@import './elements/testimonials';
-@import './elements/why';
-@import './elements/video';
-@import './elements/footer';
+@import "./elements/header";
+@import "./elements/hamburger";
+@import "./elements/navigation";
+@import "./elements/home";
+@import "./elements/how-to";
+@import "./elements/testimonials";
+@import "./elements/why";
+@import "./elements/video";
+@import "./elements/footer";
