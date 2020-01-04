@@ -9,6 +9,7 @@
   flex-direction: column;
   position: relative;
   color: $secondary_color;
+  text-align: center;
 
   &::after {
     content: "";
@@ -49,14 +50,20 @@
     z-index: 2;
     opacity: 0.8;
 
-    &::before,
-    &::after {
-      display: inline-block;
-      content: "";
-      border-top: 2px solid $secondary_color;
-      width: 300px;
-      margin: 0 2rem;
-      transform: translateY(-0.25rem);
+    @media (max-width: 850px) {
+      display: none;
+    }
+
+    @media (min-width: 850px) {
+      &::before,
+      &::after {
+        display: inline-block;
+        content: "";
+        border-top: 2px solid $secondary_color;
+        width: 300px;
+        margin: 0 2rem;
+        transform: translateY(-0.25rem);
+      }
     }
   }
 
@@ -64,6 +71,10 @@
     z-index: 2;
     opacity: 0.8;
     position: relative;
+
+    @media (max-width: 850px) {
+      display: none;
+    }
 
     &::before,
     &::after {
