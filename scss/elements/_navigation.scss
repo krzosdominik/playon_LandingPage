@@ -3,20 +3,12 @@
     list-style: none;
     display: flex;
 
-    @media (max-width: 700px) {
-      flex-direction: column;
-    }
-
     .navigation__item {
       a {
         text-decoration: none;
         color: $font_color;
         padding: 30px;
         transition: color 0.1s 0.1s ease-in-out;
-
-        @media (max-width: 850px) {
-          padding: 30px 15px;
-        }
 
         &:hover {
           color: $primary_color;
