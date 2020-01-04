@@ -709,6 +709,7 @@ span {
 
 .how-to .how-to__item .item__name {
   font-size: 20px;
+  position: relative;
 }
 
 .how-to .how-to__item .item__name::after {
@@ -719,6 +720,16 @@ span {
   margin: 0 2rem;
   -webkit-transform: translateY(-0.25rem);
           transform: translateY(-0.25rem);
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .how-to .how-to__item .item__name::after {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    -webkit-transform: translate(-65%);
+            transform: translate(-65%);
+  }
 }
 
 .how-to .how-to__button {
