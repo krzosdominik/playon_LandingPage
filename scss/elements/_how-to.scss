@@ -18,6 +18,7 @@
 
     .item__name {
       font-size: 20px;
+      position: relative;
 
       &::after {
         display: inline-block;
@@ -26,6 +27,13 @@
         width: 200px;
         margin: 0 2rem;
         transform: translateY(-0.25rem);
+
+        @media (min-width: 500px) and (max-width: 1000px) {
+          position: absolute;
+          top: 55px;
+          left: 50%;
+          transform: translate(-65%);
+        }
       }
     }
   }
