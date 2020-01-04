@@ -864,12 +864,13 @@ span {
 .video .video__navigation {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 @media (max-width: 850px) {
   .video .video__navigation {
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 }
@@ -912,6 +913,18 @@ span {
 
 .video .video__button:hover {
   background-color: #0e6f6e;
+}
+
+.video__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1350px) {
+  .video__list {
+    flex-direction: column;
+  }
 }
 
 .video__item {
