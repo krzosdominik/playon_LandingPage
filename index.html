@@ -1,12 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PLAYON</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PLAYON</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="https://kit.fontawesome.com/3497b25a74.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header class="page__header">
+            <a href="/">
+                <figure class="page__logo">
+                    <img src="./assets/logo.png" alt="Company logo" />
+                </figure>
+            </a>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#how-to">How to</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#why">Why</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+        </header>
+
+        <section class="jumbotron">
+            <h1 class="jumbotron__header">Make Great Videos</h1>
+            <p class="jumbotron__description">
+                The Best Place for High Quality Videos
+            </p>
+            <div class="jumbotron__buttons">
+                <button class="jumbotron__button">Upload Video</button>
+                <button class="jumbotron__button">Learn More</button>
+            </div>
+            <p class="jumbotron__text">We work with</p>
+            <fugure class="jumbotron__partners">
+                <img src='./assets/partners_icons.png' alt='Partners' />
+            </fugure>
+        </section>
+
+        <section id="how-to" class="how-to">
+            <h2 class="how-to__header">How to use <span>PLAYON</span></h2>
+            <p class="how-to__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor
+                ullamcorper felis at convallis.
+            </p>
+            <article class="how-to__items row container">
+                <div class="how-to__item col-4">
+                    <figure class="item__icon">
+                        <img src="./assets/icons/search.svg" alt="Search icon"
+                            />
+                    </figure>
+                    <h4 class="item__name">Find <br /> lorem ipsum</h4>
+                    <p class="item__description">
+                        Aenean suscipit ipsum vitae purus
+                        vestibulum, sed blandit est facilisis.
+                    </p>
+                </div>
+                <div class="how-to__item col-4">
+                    <figure class="item__icon">
+                        <img src="./assets/icons/plane.svg" alt="Plane" />
+                    </figure>
+                    <h4 class="item__name">Send <br /> euismod neque</h4>
+                    <p>
+                        Mauris sit amet mollis nisl.
+                        Aenean vehicula euismod neque.
+                    </p>
+                </div>
+                <div class="how-to__item col-4">
+                    <figure class="item__icon monitor-icon">
+                        <img src="./assets/icons/monitor.svg" alt="Monitor" />
+                    </figure>
+                    <h4 class="item__name">Watch <br /> vitae purus</h4>
+                    <p>
+                        Duis faucibus varius neque,
+                        sit amet luctus ex eleifend sed.
+                    </p>
+                </div>
+            </article>
+            <button class="how-to__button">Get Me Started</button>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2 class="testimonials__header">Testimonials</h2>
+            <p class="testimonials__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor
+                ullamcorper felis at convallis.
+            </p>
+            <article class="testimonials__users row container">
+                <div class="testimonials__user col-4">
+                    <figure class="user__avatar">
+                        <img src="./assets/john_avatar.png" alt='John Doe' />
+                    </figure>
+                    <h4 class="user__name">John Doe</h4>
+                    <p class="user__company">Microsoft</p>
+                    <blockquote class="user__opinion">
+                        “Lorem ipsum dolor sit amet, con adipiscing elit. Nunc
+                        eget nunc vitae ullamcorper.”
+                    </blockquote>
+                </div>
+                <div class="testimonials__user col-4">
+                    <figure class="user__avatar">
+                        <img src="./assets/jim_avatar.png" alt='Jim Doe' />
+                    </figure>
+                    <h4 class="user__name">Jim Doe</h4>
+                    <p class="user__company">You Tube</p>
+                    <blockquote class="user__opinion">
+                        “Lorem ipsum dolor sit amet, con adipiscing elit. Nunc
+                        eget nunc vitae ullamcorper.”
+                    </blockquote>
+                </div>
+                <div class="testimonials__user col-4">
+                    <figure class="user__avatar">
+                        <img src="./assets/jane_avatar.png" alt='Jane Doe' />
+                    </figure>
+                    <h4 class="user__name">Jane Doe</h4>
+                    <p class="user__company">Google</p>
+                    <blockquote class="user__opinion">
+                        “Lorem ipsum dolor sit amet, con adipiscing elit. Nunc
+                        eget nunc vitae ullamcorper.”
+                    </blockquote>
+                </div>
+                <div class="testimonials__user col-4">
+                    <figure class="user__avatar">
+                        <img src="./assets/joseph_avatar.png" alt='Joseph' />
+                    </figure>
+                    <h4 class="user__name">Joseph Doe</h4>
+                    <p class="user__company">Nvidia</p>
+                    <blockquote class="user__opinion">
+                        “Lorem ipsum dolor sit amet, con adipiscing elit. Nunc
+                        eget nunc vitae ullamcorper.”
+                    </blockquote>
+                </div>
+            </article>
+        </section>
+
+        <section id="why" class="why">
+            <h2 class="why__header">Why Use <span>PLAYON?</span></h2>
+            <p class="why__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor
+                ullamcorper felis at convallis.
+            </p>
+            <article class="reason__list row container">
+                <div class="reason__item col-3">
+                    <figure class="reason__icon">
+                        <img src="./assets/icons/gear.svg" alt="Gear" />
+                    </figure>
+                    <h3 class="reason__name">Quality</h3>
+                    <p class="reason__description">
+                        Aenean suscipit ipsum vitae
+                        purus vestibulum, sed blandit
+                    </p>
+                </div>
+                <div class="reason__item col-3">
+                    <figure class="reason__icon">
+                        <img src="./assets/icons/sliders.svg" alt="Sliders" />
+                    </figure>
+                    <h3 class="reason__name">Control</h3>
+                    <p class="reason__description">
+                        Aenean suscipit ipsum vitae
+                        purus vestibulum, sed blandit
+                    </p>
+                </div>
+                <div class="reason__item col-3">
+                    <figure class="reason__icon">
+                        <img src="./assets/icons/toggle-left.svg" alt="Switch"
+                            />
+                    </figure>
+                    <h3 class="reason__name">Choice</h3>
+                    <p class="reason__description">
+                        Aenean suscipit ipsum vitae
+                        purus vestibulum, sed blandit
+                    </p>
+                </div>
+                <div class="reason__item col-3">
+                    <figure class="reason__icon">
+                        <img src="./assets/icons/key.svg" alt="Key" />
+                    </figure>
+                    <h3 class="reason__name">Safe</h3>
+                    <p class="reason__description">
+                        Aenean suscipit ipsum vitae
+                        purus vestibulum, sed blandit
+                    </p>
+                </div>
+            </article>
+            <button class="why__button">Get Me started</button>
+        </section>
+
+        <section id="video" class="video">
+            <h2 class="video__header">Sample <span>Videos</span></h2>
+            <ul class="video__navigation">
+                <li class="video__navigation-item">
+                    <a href="#video">All</a>
+                </li>
+                <li class="video__navigation-item">
+                    <a href="#video">Sports</a>
+                </li>
+                <li class="video__navigation-item">
+                    <a href="#video">Travel</a>
+                </li>
+                <li class="video__navigation-item">
+                    <a href="#video">Food</a>
+                </li>
+                <li class="video__navigation-item">
+                    <a href="#video">Family</a>
+                </li>
+            </ul>
+            <div class="video__list row container">
+                <article class="video__item col-3">
+                    <p class="video__name">Lorem ipsum</p>
+                </article>
+                <article class="video__item col-3">
+                    <p class="video__name">Nunc eget</p>
+                </article>
+                <article class="video__item col-3">
+                    <p class="video__name">Lorem ipsum</p>
+                </article>
+                <article class="video__item col-3">
+                    <p class="video__name">Nunc eget</p>
+                </article>
+            </div>
+            <button class="video__button">Load More</button>
+        </section>
+
+        <footer class="page-footer">
+            <figure class="page__logo">
+                <img src="./assets/logo.png" alt="Company logo" />
+            </figure>
+            <p class="footer__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                info@playon.com
+            </p>
+            <div class="footer__icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-vimeo-square"></i>
+                <i class="fab fa-pinterest-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__botom-text">
+                    Copyright © 2020 PLAYON. All Rights Reserved
+                </p>
+            </div>
+        </footer>
+
+        <script src='./js/app.js'></script>
+
+    </body>
 </html>

@@ -1,4 +1,42 @@
 body {
   margin: 0 0;
   padding: 0 0;
+  font-family: "Raleway";
+  color: #a8a7a7;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #414042;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    border-top: 1px solid lighten(#a8a7a7, 10);
+    width: 300px;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+span {
+  color: #1ac9c7;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+
+  @media (max-width: 750px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

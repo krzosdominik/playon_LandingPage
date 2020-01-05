@@ -1,0 +1,46 @@
+.how-to {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .how-to__item {
+    margin: 0 20px;
+    border-radius: 10px;
+    padding: 10px 25px 5px 25px;
+    transition: color 0.2s 0.2s ease-in-out;
+
+    &:hover {
+      color: $primary_color;
+    }
+
+    .item__name {
+      font-size: 20px;
+      position: relative;
+
+      &::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid lighten($font_color, 10);
+        width: 200px;
+        margin: 0 2rem;
+        transform: translateY(-0.25rem);
+
+        @media (min-width: 500px) and (max-width: 1000px) {
+          position: absolute;
+          top: 55px;
+          left: 50%;
+          transform: translate(-65%);
+        }
+      }
+    }
+  }
+
+  .how-to__button {
+    @include buttons($primary_color);
+    border-bottom: 3px solid darken($primary_color, 20);
+    margin: 70px;
+  }
+}

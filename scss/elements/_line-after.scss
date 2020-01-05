@@ -1,0 +1,12 @@
+@mixin line-after($width, $color) {
+  &::after {
+    position: absolute;
+    content: "";
+    border-top: 1px solid lighten($color, 20);
+    width: $width;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 5px;
+  }
+}
